@@ -43,6 +43,10 @@ ul::-webkit-scrollbar{
   background-color: #00ADB5 !important;
 }
 
+.bgg{
+  background-color: #222831 !important;
+}
+
 
 nav ul li:nth-child(1) {
 

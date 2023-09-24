@@ -1,69 +1,277 @@
+import Image from 'next/image'
 import React from 'react'
 
 const FreshRec = () => {
   return (
-   <>
+    <>
 
-   
-<h2 className='ml-4 mt-5'>Fresh Recommendations</h2>
+{/* Fresh Recommendations */}
 
-    <div className="container flex mt-3 gap-3 px-3">
+<h2 className='ml-4 mt-5 text-xl'>Limited Deals :</h2>
 
-      <div className=" relative flex flex-col justify-center items-start bgp rounded-3xl mx-0 px-2 w-[40wh] py-3">
-        <div>
-        <img className='rounded-3xl ' src="https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202309/iphone-15-084541573-16x9_0.png?VersionId=pRutG6KiIBL2acG2uAAUgRABAsECOi4k&size=690:388" alt="" width={300} />
+{/* Main Div Parent Starts */}
+      <div className=" flex mt-4 gap-3 px-3 ">
 
-        <span className='top-6 absolute right-5'><img src="./Save.png" alt="" width={22} /></span>
-        </div>
+        <div className=" relative flex flex-col justify-start   bgg rounded-3xl px-1 ">
 
-        <div className="flex mt-2 items-start">
-          <span>
-            <img src="./RupeeS.png" alt="" width={22} />
+          <img className='rounded-3xl px-1 mt-3 object-cover' src="https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202309/iphone-15-084541573-16x9_0.png?VersionId=pRutG6KiIBL2acG2uAAUgRABAsECOi4k&size=690:388" alt=""  />
+
+          <span className='top-6 absolute right-6'><img src="./Save.png" alt="" width={22} /></span>
+
+
+          <div className="flex mt-2 items-start ml-2">
+            <span className='mr-2'>
+              <Image className='mt-px' src="/bluerupee.png" alt="" width={19} height={19} />
             </span>
-            
-            <span>
+
+            <span className=''>
               79,000/-
             </span>
+          </div>
+
+          <div className="desc font-extralight text-sm ml-2 text-gray-200 w-2/3">
+            Iphone 15
+          </div>
+
+          <div className="location text-xs ml-2 w-2/3 mb-4 text-gray-200">
+            Nabha Patiala Punjab India
+          </div>
         </div>
 
-        <div className="desc font-extralight text-sm">
-          Iphone 15 
-        </div>
 
-        <div className="location text-xs">
-          Nabha Patiala Punjab India
-        </div>
-      </div>
+        <div className=" relative flex flex-col justify-start  bgp rounded-3xl px-1 ">
+
+          <img className='rounded-3xl px-1 mt-3 object-cover' src="https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202309/iphone-15-084541573-16x9_0.png?VersionId=pRutG6KiIBL2acG2uAAUgRABAsECOi4k&size=690:388" alt=""  />
+
+          <span className='top-6 absolute right-6'><img src="./Save.png" alt="" width={22} /></span>
 
 
-      <div className=" relative flex flex-col justify-center items-start bgp rounded-3xl mx-0 px-2 w-[40wh]">
-        <img className='rounded-3xl mt-0' src="https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202309/iphone-15-084541573-16x9_0.png?VersionId=pRutG6KiIBL2acG2uAAUgRABAsECOi4k&size=690:388" alt="" width={300} />
-
-        <span className='top-5 absolute right-6'><img src="./Save.png" alt="" width={22} /></span>
-
-        <div className="flex mt-2 items-start">
-          <span>
-            <img src="./RupeeS.png" alt="" width={22} />
+          <div className="flex mt-2 items-start ml-2">
+            <span className='mr-1'>
+              <img className='' src="./RupeeS.png" alt="" width={24} />
             </span>
-            
-            <span>
+
+            <span className=''>
               79,000/-
             </span>
+          </div>
+
+          <div className="desc font-extralight text-sm ml-2 text-gray-200 w-2/3">
+            Iphone 15
+          </div>
+
+          <div className="location text-xs ml-2 w-2/3 mb-4 text-gray-200">
+            Nabha Patiala Punjab India
+          </div>
         </div>
 
-        <div className="desc">
-          Iphone 15 
-        </div>
 
-        <div className="location">
-          Nabha Patiala Punjab India
-        </div>
+
+
       </div>
 
+{/* Main Div Parent Ends */}
 
-    </div>
-    
-   </>
+
+{/* Main Div Parent Starts */}
+
+      <div className=" flex mt-6 gap-3 px-3">
+
+        <div className=" relative flex flex-col justify-start  bgp rounded-3xl px-1 ">
+
+          <img className='rounded-3xl px-1 mt-3 object-cover' src="https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202309/iphone-15-084541573-16x9_0.png?VersionId=pRutG6KiIBL2acG2uAAUgRABAsECOi4k&size=690:388" alt=""  />
+
+          <span className='top-6 absolute right-6'><img src="./Save.png" alt="" width={22} /></span>
+
+
+          <div className="flex mt-2 items-start ml-2">
+            <span className='mr-1'>
+              <img className='' src="./RupeeS.png" alt="" width={24} />
+            </span>
+
+            <span className=''>
+              79,000/-
+            </span>
+          </div>
+
+          <div className="desc font-extralight text-sm ml-2 text-gray-200 w-2/3">
+            Iphone 15
+          </div>
+
+          <div className="location text-xs ml-2 w-2/3 mb-4 text-gray-200">
+            Nabha Patiala Punjab India
+          </div>
+        </div>
+
+
+        <div className=" relative flex flex-col justify-start  bgp rounded-3xl px-1 ">
+
+          <img className='rounded-3xl px-1 mt-3 object-cover' src="https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202309/iphone-15-084541573-16x9_0.png?VersionId=pRutG6KiIBL2acG2uAAUgRABAsECOi4k&size=690:388" alt=""  />
+
+          <span className='top-6 absolute right-6'><img src="./Save.png" alt="" width={22} /></span>
+
+
+          <div className="flex mt-2 items-start ml-2">
+            <span className='mr-1'>
+              <img className='' src="./RupeeS.png" alt="" width={24} />
+            </span>
+
+            <span className=''>
+              79,000/-
+            </span>
+          </div>
+
+          <div className="desc font-extralight text-sm ml-2 text-gray-200 w-2/3">
+            Iphone 15
+          </div>
+
+          <div className="location text-xs ml-2 w-2/3 mb-4 text-gray-200">
+            Nabha Patiala Punjab India
+          </div>
+        </div>
+
+
+
+
+      </div>
+
+{/* Main Div Parent Starts */}
+
+
+
+{/* LIMITED DEALS COL STARTS */}
+{/* Main Div Parent Starts */}
+
+
+<h2 className='ml-4 mt-5 text-xl'>Limited Deals :</h2>
+
+{/* Main Div Parent Starts */}
+      <div className=" flex mt-4 gap-3 px-3">
+
+        <div className=" relative flex flex-col justify-start  bgg rounded-3xl px-1 ">
+
+          <img className='rounded-3xl px-1 mt-3 object-cover' src="https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202309/iphone-15-084541573-16x9_0.png?VersionId=pRutG6KiIBL2acG2uAAUgRABAsECOi4k&size=690:388" alt=""  />
+
+          <span className='top-6 absolute right-6'><img src="./Save.png" alt="" width={22} /></span>
+
+
+          <div className="flex mt-2 items-start ml-2">
+            <span className='mr-2'>
+              <Image className='mt-px' src="/bluerupee.png" alt="" width={19} height={19} />
+            </span>
+
+            <span className=''>
+              79,000/-
+            </span>
+          </div>
+
+          <div className="desc font-extralight text-sm ml-2 text-gray-200 w-2/3">
+            Iphone 15
+          </div>
+
+          <div className="location text-xs ml-2 w-2/3 mb-4 text-gray-200">
+            Nabha Patiala Punjab India
+          </div>
+        </div>
+
+
+        <div className=" relative flex flex-col justify-start  bgp rounded-3xl px-1 ">
+
+          <img className='rounded-3xl px-1 mt-3 object-cover' src="https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202309/iphone-15-084541573-16x9_0.png?VersionId=pRutG6KiIBL2acG2uAAUgRABAsECOi4k&size=690:388" alt=""  />
+
+          <span className='top-6 absolute right-6'><img src="./Save.png" alt="" width={22} /></span>
+
+
+          <div className="flex mt-2 items-start ml-2">
+            <span className='mr-1'>
+              <img className='' src="./RupeeS.png" alt="" width={24} />
+            </span>
+
+            <span className=''>
+              79,000/-
+            </span>
+          </div>
+
+          <div className="desc font-extralight text-sm ml-2 text-gray-200 w-2/3">
+            Iphone 15
+          </div>
+
+          <div className="location text-xs ml-2 w-2/3 mb-4 text-gray-200">
+            Nabha Patiala Punjab India
+          </div>
+        </div>
+
+
+
+
+      </div>
+
+{/* Main Div Parent Ends */}
+
+
+{/* Main Div Parent Starts */}
+
+      <div className=" flex mt-6 gap-3 px-3">
+
+        <div className=" relative flex flex-col justify-start  bgp rounded-3xl px-1 ">
+
+          <img className='rounded-3xl px-1 mt-3 object-cover' src="https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202309/iphone-15-084541573-16x9_0.png?VersionId=pRutG6KiIBL2acG2uAAUgRABAsECOi4k&size=690:388" alt=""  />
+
+          <span className='top-6 absolute right-6'><img src="./Save.png" alt="" width={22} /></span>
+
+
+          <div className="flex mt-2 items-start ml-2">
+            <span className='mr-1'>
+              <img className='' src="./RupeeS.png" alt="" width={24} />
+            </span>
+
+            <span className=''>
+              79,000/-
+            </span>
+          </div>
+
+          <div className="desc font-extralight text-sm ml-2 text-gray-200 w-2/3">
+            Iphone 15
+          </div>
+
+          <div className="location text-xs ml-2 w-2/3 mb-4 text-gray-200">
+            Nabha Patiala Punjab India
+          </div>
+        </div>
+
+
+        <div className=" relative flex flex-col justify-start  bgp rounded-3xl px-1 ">
+
+          <img className='rounded-3xl px-1 mt-3 object-cover' src="https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202309/iphone-15-084541573-16x9_0.png?VersionId=pRutG6KiIBL2acG2uAAUgRABAsECOi4k&size=690:388" alt=""  />
+
+          <span className='top-6 absolute right-6'><img src="./Save.png" alt="" width={22} /></span>
+
+
+          <div className="flex mt-2 items-start ml-2">
+            <span className='mr-1'>
+              <img className='' src="./RupeeS.png" alt="" width={24} />
+            </span>
+
+            <span className=''>
+              79,000/-
+            </span>
+          </div>
+
+          <div className="desc font-extralight text-sm ml-2 text-gray-200 w-2/3">
+            Iphone 15
+          </div>
+
+          <div className="location text-xs ml-2 w-2/3 mb-4 text-gray-200">
+            Nabha Patiala Punjab India
+          </div>
+        </div>
+
+
+
+
+      </div>
+
+    </>
   )
 }
 

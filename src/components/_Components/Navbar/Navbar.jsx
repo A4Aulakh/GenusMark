@@ -7,7 +7,7 @@ const Navbar = () => {
         <div  className="navbar flex justify-between items-center bg-darkblue h-[60px] px-4">
 
             <div className="left mb-2 mr-2">
-                <img src="./LogoWhite.png" alt=""/> 
+                <img src="./LogoWhite.png" alt="" width={170}/> 
             </div>
 
             {/* RIGHT SIDE OF THE NAVBAR */}
