@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+  
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap') ;
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100 !important;
+}
+
+ul::-webkit-scrollbar{
+  display: none !important;
+}
+
+.bgp {
+  background-color: #00ADB5 !important;
+}
+
+
+nav ul li:nth-child(1) {
+
+  background-color: #222831 !important;
+
+}
+
+nav ul li {
+
+  background-color: #00ADB5 !important;
+
+}
+
+
