@@ -1,6 +1,13 @@
 import React from 'react'
 
 const Navbar = () => {
+
+
+
+const handleLoginClick =() => {
+
+}
+
   return (
    <>
     <nav>
@@ -12,36 +19,53 @@ const Navbar = () => {
 
             {/* RIGHT SIDE OF THE NAVBAR */}
 
-            <div className="right flex items-center ">
+            <div className="right flex items-center gap-2">
 
                 {/* Nation Selector */}
 
-                <span className='flex bg-darkbgblack rounded-2xl items-center h-8'>
+                <span className='hidden bg-darkbgblack gap-2 pl-3 pr-5 w-80 rounded-2xl items-center h-8 lg:flex'>
                     
-                   
+                <span className="drop-down ">
+                        <img  src="./searchmain.png" alt="" width={12} />
+                    </span>
 
-                    <div className="nation text-xs px-4">
-                        India
-                    </div>
+                    <span className="nation text-xs">
+                        Search
+                    </span>
 
-                    <div className="drop-down pr-4">
-                        <img src="./dropdown.png" alt="" width={12} />
-                    </div>
+                  
                 </span>
 
-                {/* Search Night Mode and Profile */}
+
+                <span className='flex bg-darkbgblack gap-2 pl-3 pr-5 rounded-2xl items-center h-8'>
+                    
+                <span className="drop-down ">
+                        <img className='lg:w-22' src="./dropdown.png" alt="" width={18} />
+                    </span>
+
+                    <span className="nation text-xs">
+                        India
+                    </span>
+
+                  
+                </span>
+
+                {/* Search Hamburger Night Mode and Profile */}
 
                 <span className='flex gap-4 px-3'>
-                    <span className="search">
-                        <img src="./searchmain.png" alt="" width={18} />
+                   
+                <span className="hidden lg:block mt-[4px]">
+                        <img className='' src="./darkmode.png" alt="" width={18} />
                     </span>
 
-                    <span className="darkmode">
-                        <img src="./darkmode.png" alt="" width={18} />
+                    <span id='profile' className="hidden lg:block mt-1" onClick={handleLoginClick()} >
+                        <img className='-mt-px' src="./profile.png" alt="" width={18} />
                     </span>
 
-                    <span className="profile">
-                        <img src="./profile.png" alt="" width={18} />
+                   
+
+                    <span className="hamburger">
+                        <img src="./ham.png" alt="" width={24} />
                     </span>
                 </span>
 
