@@ -37,8 +37,9 @@ ul::-webkit-scrollbar {
   background-color: #D9D9D9 !important;
 }
 
-.btnhover{
-  background-color: #868686 !important;
+.btnbg:hover{
+  background-color: #eeeeee !important;
+  transition: all 112ms ease;
 }
 
 
