@@ -15,7 +15,8 @@ const Homepage = () => {
 
     const cssClass = useSelector((state) => state.users.cssClass);
     const loginPage = useSelector((state) => state.users.loginPage);
-    const hamburgerEase = useSelector((state) => state.hambugerhandle.hamburgerEase);
+    const HamburgerEase = useSelector((state) => state.hambugerhandle.HamburgerEase);
+
 
     return (
         <>
@@ -23,7 +24,7 @@ const Homepage = () => {
 
             {loginPage && (
                 <div className={`${loginPage}`}>
-                    <span className='z-30 absolute flex justify-center items-center h-full w-full '>
+                    <span className='z-30 absolute flex justify-center items-center h-full w-full'>
 
                         <LoginWithMob />
 
@@ -43,7 +44,8 @@ const Homepage = () => {
             )}
 
 
-               {hamburgerEase && (<div className={`${hamburgerEase}`}>
+               {HamburgerEase && (
+               <div className={`${HamburgerEase}`}>
                 <div className="absolute top-16 z-20 flex justify-center items-center h-full w-full backdrop-blur-sm">
             <Sidebar/>
             </div>

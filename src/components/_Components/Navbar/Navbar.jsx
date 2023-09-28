@@ -1,23 +1,41 @@
 'use client'
-import { setHamburger } from '@/app/store/slices/hamburgerSlice';
+import { setHamburgerEase, toggleDarkMode  } from '@/app/store/slices/hamburgerSlice';
 import { setCssClass } from '@/app/store/slices/userSlice';
-import React from 'react'
-import { useDispatch } from 'react-redux';
+import React, { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux';
 
 const Navbar = () => {
 
     const dispatch = useDispatch();
 
-    const handleHamburger = () => {
-        dispatch(setHamburger("block"));
-    }
-
-    handleHamburger()
-    
     const handleLogin = () => {
         dispatch(setCssClass("block"));
+        dispatch(setHamburgerEase("hidden"));
+        document.body.style.overflow = 'hidden';
     }
 
+    const HamburgerEase = useSelector((state) => state.hambugerhandle.HamburgerEase);
+
+    const darkMode = useSelector((state) => state.hambugerhandle.darkMode);
+
+    useEffect(() => {
+        document.body.style.backgroundColor = darkMode ? 'black' : 'white';
+      }, [darkMode]);
+
+
+    const handleHamburger = () => {
+        // Toggle between "block" and "hidden" based on the current state
+        const newHamburgerEase = HamburgerEase === "block" ? "hidden" : "block";
+        document.body.style.overflow = HamburgerEase === "hidden" ? "hidden" : "";
+        dispatch(setHamburgerEase(newHamburgerEase));
+    };
+
+    const handleDarkModeToggle = () => {
+        dispatch(toggleDarkMode()); // Toggle dark mode state
+        dispatch(setHamburgerEase("hidden"));
+      };
+
+      
 
 
     return (
@@ -66,7 +84,7 @@ const Navbar = () => {
 
                         <span className='flex gap-4 px-3'>
 
-                            <span className="hidden lg:block mt-[4px]">
+                            <span onClick={handleDarkModeToggle} className="hidden lg:block mt-[4px]">
                                 <img className='' src="./darkmode.png" alt="" width={18} />
                             </span>
 
@@ -76,7 +94,7 @@ const Navbar = () => {
 
 
 
-                            <span  className="hamburger" onClick={handleHamburger}>
+                            <span className="hamburger" onClick={handleHamburger}>
                                 <img src="./ham.png" alt="" width={24} />
                             </span>
                         </span>
