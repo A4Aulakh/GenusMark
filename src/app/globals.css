@@ -2,13 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-
+html {
+  behavior: smooth;
+}
 
 
 body {
 
   color: white;
-  background-color: white ;
+  background-color: white;
 
 }
 
@@ -17,8 +19,8 @@ body {
 
 body {
   font-family: 'Poppins', sans-serif;
-  font-weight: 100 !important;
-  scrollbar-width: 1px;
+  font-weight: 400 !important;
+  scrollbar-width: 0px !important;
 }
 
 ul::-webkit-scrollbar {
@@ -27,22 +29,26 @@ ul::-webkit-scrollbar {
 
 .bgp {
   background-color: #00ADB5 !important;
- 
+
 }
 
 .bgg {
   background-color: #222831 !important;
 }
 
-.btnbg{
+.btnbg {
   background-color: #D9D9D9 !important;
 }
 
-.btnbg-dark{
+.opac{
+  background-color: rgb(217, 217, 217, 35%);
+}
+
+.btnbg-dark {
   background-color: #222831 !important;
 }
 
-.btnbg:hover{
+.btnbg:hover {
   background-color: #eeeeee !important;
   transition: all 112ms ease;
 }
@@ -58,4 +64,22 @@ nav ul li {
 
   background-color: #00ADB5 !important;
 
+}
+
+/* Login Page Phone Number Css */
+.react-tel-input {
+  font-family: "poppins";
+  font-size: 15px;
+  position: relative;
+  width: auto !important;
+}
+
+.opt-container>input {
+  width: 30px !important;
+  border-radius: 4px !important;
+  background-color: #D9D9D9 !important;
+}
+
+.opt-container{
+  margin-left: 20px;
 }
